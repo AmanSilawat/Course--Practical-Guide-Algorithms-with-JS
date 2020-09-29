@@ -3,7 +3,7 @@
 // first time loop
 function binarySearch(list, item) {
     var min = 0; //0
-    var max = list.length - 1; //5
+    var max = list.length - 1; //4
     var guess; //undefinded
 
     while (min <= max) {
@@ -28,7 +28,7 @@ function binarySearch(list, item) {
 // second time loop
 function binarySearch(list, item) {
     var min = 0; //3
-    var max = list.length - 1; //5
+    var max = list.length - 1; //4
     var guess; //2
 
     while (min <= max) {
