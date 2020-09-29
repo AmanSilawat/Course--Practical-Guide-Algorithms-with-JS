@@ -43,8 +43,6 @@ let memo = funMemo(tenTime);
 memo(6); // new calculate
 memo(6); // finding from cache
 
-
-
 // ..
 // ....
 // .......
@@ -70,4 +68,32 @@ memo2(8); // new calculate
 memo2(8); // finding from cache
 memo2(9); // new calculate
 
+// ..
+// ....
+// .......
+// *Binary Search Tree (find Index)*
 
+function binarySearch(arr, val) {
+    let min = 0;
+    let max = arr.length - 1;
+    let index;
+    
+    while (min <= max) {
+        index = Math.floor( (min+max) / 2)
+        
+        // base case
+        console.log(index, "index")
+        if( arr[index] === val ) {
+            return index;
+        } else{
+            if( arr[index] < val ) {
+                console.log(index, "index")
+                min = index + 1;
+            } else {
+                max = index - 1;
+            }
+        }
+    }
+}
+var resBin = binarySearch([1, 2, 3, 4, 5], 2);
+console.log(resBin);
